@@ -14,15 +14,70 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Generador de personajes</h1>
+      <h1 class="mt-5">Character generator</h1>
       <img src="./santa-sede.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <container>
+        <div class="row justify-content-md-center mt-5">
+          <div class="col col-lg-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Insert a name</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-md-center mt-1">
+          <div class="col col-lg-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Insert a surname</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-md-center mt-1">
+          <div class="col col-lg-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Insert a country</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-md-center mt-1">
+          <div class="col col-lg-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Insert a possible affiliation</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-md-center mt-1">
+          <div class="col col-lg-3">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Insert a personality trait</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-md-center">
+            <button class="btn btn-primary me-3">Insert a new option!</button>
+            <button class="btn btn-success">Generate character</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-md-center mt-3">
+            <div class="h3">Aquí irá el personaje creado cuando empiece a meter JS</div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
