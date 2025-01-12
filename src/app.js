@@ -17,6 +17,7 @@ let surnames = [];
 let countries = [];
 let affiliations = [];
 let traits = [];
+
 /* Esta función es para añadir strings a las variables declaradas antes*/
 
 function pushInputs(
@@ -51,12 +52,43 @@ function pushInputs(
     p_traits.push(inputTrait.value);
     inputTrait.value = "";
   }
-
-  console.log(names, surnames, countries, affiliations, traits);
 }
+
+/* Este botón introduce strings mediante input a los distintos array */
 
 document
   .querySelector(".btn-primary")
   .addEventListener("click", () =>
     pushInputs(names, surnames, countries, affiliations, traits)
   );
+
+/* Esta función crea variables que eligen un string de manera randomizada de cada array y forman una frase con toda la información */
+
+function generadorDePersonajes() {
+  let namesRandom = Math.floor(Math.random() * names.length);
+
+  let surnamesRandom = Math.floor(Math.random() * surnames.length);
+
+  let countriesRandom = Math.floor(Math.random() * countries.length);
+
+  let affiliationsRandom = Math.floor(Math.random() * affiliations.length);
+
+  let traitsRandom = Math.floor(Math.random() * traits.length);
+
+  document.querySelector(".h3").innerHTML =
+    names[namesRandom] +
+    " " +
+    surnames[surnamesRandom] +
+    " is a " +
+    traits[traitsRandom] +
+    " person from " +
+    countries[countriesRandom] +
+    " that is affiliated to " +
+    affiliations[affiliationsRandom];
+}
+
+/* Este botón activa la función anterior y hace que aparezca la frase creada*/
+
+document
+  .querySelector(".btn-success")
+  .addEventListener("click", () => generadorDePersonajes());
